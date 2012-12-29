@@ -8,7 +8,8 @@ Ability to use bootstrap in friendly manner under SFDC environment.
 
 ## Modification
 
-Modify bootstrap less with several nested rules. All modifications note can be seen under /less/bootstrap.less
+Modify bootstrap less with several nested rules. All modifications note can be seen under /less/bootstrap.less.
+All bootstrap tags / styles can be used under nested id/class 'bootstrap-panel'.
 
 ## Quick start
 
