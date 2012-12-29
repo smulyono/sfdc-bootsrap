@@ -2,13 +2,6 @@
 // Typography
 // --------------------------------------------------
 
-
-// Body text
-// -------------------------
-
-p {
-  margin: 0 0 @baseLineHeight / 2;
-}
 .lead {
   margin-bottom: @baseLineHeight;
   font-size: @baseFontSize * 1.5;
@@ -17,6 +10,12 @@ p {
 }
 
 
+// Body text
+// -------------------------
+#bootstrap-panel, .bootstrap-panel{
+p {
+  margin: 0 0 @baseLineHeight / 2;
+}
 // Emphasis & misc
 // -------------------------
 
@@ -232,4 +231,5 @@ address {
   margin-bottom: @baseLineHeight;
   font-style: normal;
   line-height: @baseLineHeight;
+}
 }

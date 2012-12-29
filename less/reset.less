@@ -4,9 +4,18 @@
 // --------------------------------------------------
 
 
-// Display in IE6-9 and FF3
+// Base settings
 // -------------------------
 
+html, #bootstrap-panel, .bootstrap-panel {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+// Display in IE6-9 and FF3
+// -------------------------
+#bootstrap-panel, .bootstrap-panel{
 article,
 aside,
 details,
@@ -38,14 +47,6 @@ audio:not([controls]) {
     display: none;
 }
 
-// Base settings
-// -------------------------
-
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
 // Focus states
 a:focus {
   .tab-focus();
@@ -144,14 +145,15 @@ textarea {
   overflow: auto; // Remove vertical scrollbar in IE6-9
   vertical-align: top; // Readability and alignment cross-browser
 }
-
+}
 
 // Printing
 // -------------------------
 // Source: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
 
 @media print {
-
+  #bootstrap-panel, .bootstrap-panel {
+  
   * {
     text-shadow: none !important;
     color: #000 !important; // Black prints faster: h5bp.com/s
@@ -213,4 +215,5 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
+  } // end of bootstrap nested panel
 }

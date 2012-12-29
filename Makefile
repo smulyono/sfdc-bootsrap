@@ -1,6 +1,8 @@
 BOOTSTRAP = ./docs/assets/css/bootstrap.css
+BOOTSTRAP_MIN=./docs/assets/css/bootstrap.min.css
 BOOTSTRAP_LESS = ./less/bootstrap.less
 BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
+BOOTSTRAP_RESPONSIVE_MIN = ./docs/assets/css/bootstrap-responsive.min.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
 DATE=$(shell date +%I:%M%p)
 CHECK=\033[32m✔\033[39m
@@ -19,7 +21,9 @@ build:
 	@jshint js/tests/unit/*.js --config js/.jshintrc
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@recess --compress ${BOOTSTRAP_LESS} > ${BOOTSTRAP_MIN}
 	@recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
+	@recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE_MIN}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
 	@node docs/build
 	@cp img/* docs/assets/img/
@@ -76,6 +80,10 @@ bootstrap:
 	echo "/*!\n* Bootstrap.js by @fat & @mdo\n* Copyright 2012 Twitter, Inc.\n* http://www.apache.org/licenses/LICENSE-2.0.txt\n*/" > bootstrap/js/copyright.js
 	cat bootstrap/js/copyright.js bootstrap/js/bootstrap.min.tmp.js > bootstrap/js/bootstrap.min.js
 	rm bootstrap/js/copyright.js bootstrap/js/bootstrap.min.tmp.js
+
+zip-bootstrap: clean bootstrap
+	rm sfdc-bootstrap.zip
+	zip sfdc-bootstrap.zip bootstrap
 
 #
 # MAKE FOR GH-PAGES 4 FAT & MDO ONLY (O_O  )

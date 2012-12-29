@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Base CSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="../docs/assets/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<!-- navigation -->
+		<div class="bootstrap-panel">
+			<div class="navbar navbar-inverse navbar-static-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+						<a class="brand" href="#">Project name</a>
+						<div class="nav-collapse">
+							<ul class="nav">
+								<li class="active">
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#about">About</a>
+								</li>
+								<li>
+									<a href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div><!--/.nav-collapse -->
+						<!-- user button -->
+						<div class="btn-group pull-right">
+							<a class="btn dropdown-toggle btn-primary"
+							data-toggle="dropdown" href="#"> <!-- shows the logged in user name --> <i class="icon-user icon-white"></i> User <span class="caret"></span> </a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Change Password</a>
+								</li>
+								<li>
+									<a href="#">Edit Profile</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+			<div class="pagination">
+				<ul>
+					<li>
+						<a href="#">Prev</a>
+					</li>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">Next</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+
+		<!-- typoghrapy -->
+		<div id="bootstrap-panel">
+			<div class="container">
+				<h1>TYPOGRAPHY</h1>
+				<h3>Hello, world with H3!</h3>
+				<p class="text-warning lead">
+					bla
+					<small>this line should be smaller</small>
+					<strong>some strong text</strong>
+				</p>
+				<p class="text-success">
+					This is success class <abbr title="hypertext markup language" class="initialism">html</abbr>
+				</p>
+				<address class="pull-right">
+					<strong>Twitter, Inc.</strong>
+					<br>
+					795 Folsom Ave, Suite 600
+					<br>
+					San Francisco, CA 94107
+					<br>
+					<abbr title="Phone">P:</abbr> (123) 456-7890
+				</address>
+				<p class="clearfix">
+					<!-- code -->
+					<code><section></code>
+					should be wrapped as inline.
+					<pre>
+						  &lt;p&gt;Sample text here...&lt;/p&gt;
+					</pre>
+				</p>
+			</div>
+		</div>
+
+		<!-- tables -->
+		<div class="container bootstrap-panel">
+			<table class="table table-condensed table-hover table-striped">
+				<tr>
+					<th>#</th>
+					<th>Product</th>
+					<th>Payment Taken</th>
+					<th>Status</th>
+				</tr>
+				<tr class="success">
+					<td>1</td>
+					<td>TB - Monthly</td>
+					<td>01/04/2012</td>
+					<td>Approved</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>TB - Monthly</td>
+					<td>01/04/2012</td>
+					<td>Approved</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>TB - Monthly</td>
+					<td>01/04/2012</td>
+					<td>Approved</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- forms -->
+		<form class="form-search bootstrap-panel container">
+			<fieldset>
+				<legend>
+					Legend
+				</legend>
+				<label>Label name</label>
+				<input type="text" placeholder="Type something">
+				<span class="help-block">Example block-level help text here.</span>
+				<label class="checkbox">
+					<input type="checkbox">
+					Check me out </label>
+				<button type="submit" class="btn">
+					Submit
+				</button>
+				<input type="text" class="input-medium search-query">
+				<button type="submit" class="btn">
+					Search
+				</button>
+			</fieldset>
+		</form>
+		<form class="form-horizontal container bootstrap-panel">
+			<fieldset>
+				<legend>
+					Horizontal Container
+				</legend>
+				<div class="control-group">
+					<label class="control-label" for="inputEmail">Email</label>
+					<div class="controls">
+						<input type="text" id="inputEmail" placeholder="Email">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">Password</label>
+					<div class="controls">
+						<input type="password" id="inputPassword" placeholder="Password">
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<label class="checkbox">
+							<input type="checkbox">
+							Remember me </label>
+						<button type="submit" class="btn">
+							Sign in
+						</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+
+		<!-- buttons -->
+		<div class="container">
+			<h1>Buttons</h1>
+			<p>
+				<button class="btn btn-large btn-primary" type="button">
+					Large button
+				</button>
+				<button class="btn btn-large" type="button">
+					Large button
+				</button>
+			</p>
+			<p>
+				<button class="btn btn-info" type="button">
+					Default button
+				</button>
+				<button class="btn" type="button">
+					Default button
+				</button>
+			</p>
+			<p>
+				<button class="btn btn-small btn-inverse" type="button">
+					Small button
+				</button>
+				<button class="btn btn-small" type="button">
+					Small button
+				</button>
+			</p>
+			<p>
+				<button class="btn btn-mini btn-warning btn-block" type="button">
+					Mini button Block
+				</button>
+				<button class="btn btn-mini disabled" type="button">
+					Mini button
+				</button>
+				<button type="button">
+					standard button
+				</button>
+			</p>
+		</div>
+
+		<!-- images -->
+		<div class="container bootstrap-panel">
+			<img src="https://d1o7k7q5yspcka.cloudfront.net/image/edunova_logo_A_250.png" class="img-rounded">
+			<img src="https://d1o7k7q5yspcka.cloudfront.net/image/edunova_logo_A_250.png" class="img-circle">
+			<img src="https://d1o7k7q5yspcka.cloudfront.net/image/edunova_logo_A_250.png" class="img-polaroid">
+		</div>
+
+		<!-- icons by glyphicons -->
+		<div class="bootstrap-panel container">
+			<p>
+				<i class="icon-search"></i>
+			</p>
+		</div>
+
+		<script src="../docs/assets/js/jquery.js"></script>
+		<script src="../docs/assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
