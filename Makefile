@@ -82,7 +82,6 @@ bootstrap:
 	rm bootstrap/js/copyright.js bootstrap/js/bootstrap.min.tmp.js
 
 zip-bootstrap: clean bootstrap
-	rm sfdc-bootstrap.zip
 	zip sfdc-bootstrap.zip bootstrap
 
 #

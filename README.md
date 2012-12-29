@@ -15,6 +15,8 @@ All bootstrap tags / styles can be used under nested id/class 'bootstrap-panel'.
 
 * [Download the latest release] (https://github.com/smulyono/sfdc-bootsrap/archive/master.zip)
   Clone the repo `git clone git://github.com/smulyono/sfdc-bootsrap.git`.
+* Zip the bootstrap (build directory) to 'sfdc-bootstrap.zip' or Run `make zip-bootstrap`. To be able to compile / build
+  follow the instructions on how to generate / build.
 * Upload sfdc-bootstrap.zip file to static resources
 * Example of usage under /pages/testBootstrap.page
   or see live demo : https://smulyono-developer-edition.na9.force.com/testBootstrap
