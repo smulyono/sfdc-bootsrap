@@ -1,144 +1,149 @@
-<apex:page standardStylesheets="true" tabStyle="Contact">
+<apex:page standardStylesheets="true" tabStyle="Contact" showHeader="true" sidebar="true">
 
-<head>
-	<apex:stylesheet value="{!URLFOR($Resource.sfdc_bootstrap,'bootstrap/css/bootstrap.min.css')}"></apex:stylesheet>
-</head>
-		<!-- navigation -->
-		<div class="bootstrap-panel">
-			<div class="navbar navbar-inverse navbar-static-top">
-				<div class="navbar-inner">
-					<div class="container">
-						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-						<a class="brand" href="#">Project name</a>
-						<div class="nav-collapse">
-							<ul class="nav">
-								<li class="active">
-									<a href="#">Home</a>
-								</li>
-								<li>
-									<a href="#about">About</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-							</ul>
-						</div><!--/.nav-collapse -->
-						<!-- user button -->
-						<div class="btn-group pull-right">
-							<a class="btn dropdown-toggle btn-primary"
-							data-toggle="dropdown" href="#"> <!-- shows the logged in user name --> <i class="icon-user icon-white"></i> User <span class="caret"></span> </a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">Change Password</a>
-								</li>
-								<li>
-									<a href="#">Edit Profile</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">Logout</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-			<div class="pagination">
-				<ul>
-					<li>
-						<a href="#">Prev</a>
-					</li>
-					<li>
-						<a href="#">1</a>
-					</li>
-					<li>
-						<a href="#">2</a>
-					</li>
-					<li>
-						<a href="#">3</a>
-					</li>
-					<li>
-						<a href="#">4</a>
-					</li>
-					<li>
-						<a href="#">Next</a>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</div>
+        <!-- navigation -->
+        <div class="bootstrap-panel">
+            <div class="navbar navbar-inverse navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                        <a class="brand" href="#">Project name</a>
+                        <div class="nav-collapse">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                        <!-- user button -->
+                        <div class="btn-group pull-right">
+                            <a class="btn dropdown-toggle btn-primary"
+                            data-toggle="dropdown" href="#"> <!-- shows the logged in user name --> <i class="icon-user icon-white"></i> User <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Change Password</a>
+                                </li>
+                                <li>
+                                    <a href="#">Edit Profile</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+            <div class="pagination">
+                <ul>
+                    <li>
+                        <a href="#">Prev</a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
 
 <!-- first form -->
 <apex:form >
 <apex:pageBlock title="Contact View Tabs">
-	<apex:pageBlockSection title="Title - without bootstrap">
-		<apex:outputText value="This is text from the output text"></apex:outputText>
-		<p>
-			some paragraph with <abbr title="hypertext markup language" class="initialism">html</abbr>
-		</p>
-	</apex:pageBlockSection>
-	<apex:pageBlockSection title="Title - with bootstrap">
-		<apex:outputText value="This is text from the output text"></apex:outputText>
-		<apex:pageBlockSectionItem >
-			<div class="bootstrap-panel">
-				<p>
-					some paragraph with <abbr title="hypertext markup language" class="initialism">html</abbr>
-				</p>
-			</div>
-		</apex:pageBlockSectionItem>
-	</apex:pageBlockSection>
-	<apex:pageBlockButtons location="top">
-		<apex:commandButton value="button with no bootstrap" />
-	</apex:pageBlockButtons>
-	
-	<apex:pageBlockButtons location="bottom">
-		<apex:outputPanel styleClass="bootstrap-panel">
-			<apex:commandButton value="button with bootstrap" styleClass="btn-inverse" />
-		</apex:outputPanel>
-	</apex:pageBlockButtons>
+    <apex:pageBlockSection title="Title - without bootstrap">
+        <apex:outputText value="This is text from the output text"></apex:outputText>
+        <p>
+            some paragraph with <abbr title="hypertext markup language" class="initialism">html</abbr>
+        </p>
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Title - with bootstrap">
+        <apex:outputText value="This is text from the output text"></apex:outputText>
+        <apex:pageBlockSectionItem >
+            <div class="bootstrap-panel">
+                <p>
+                    some paragraph with <abbr title="hypertext markup language" class="initialism">html</abbr>
+                </p>
+            </div>
+        </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+    <apex:pageBlockButtons location="top">
+        <apex:commandButton value="button with no bootstrap" />
+    </apex:pageBlockButtons>
+    
+    <apex:pageBlockButtons location="bottom">
+        <apex:outputPanel styleClass="bootstrap-panel">
+            <apex:commandButton value="button with bootstrap" styleClass="btn-inverse" />
+            <div class="btn-group">
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
+              Action
+              <span class="caret"></span>
+             </button>
+             <ul class="dropdown-menu">
+              <li><a href="#">drop menu</a> </li>
+              <li><a href="#">drop menu2</a></li>
+            </ul>
+            </div>
+        </apex:outputPanel>
+    </apex:pageBlockButtons>
 </apex:pageBlock>
 </apex:form>
 
 <!-- second form For example on adding full bootstrap form -->
 <apex:form id="form2" styleClass="form-horizontal container bootstrap-panel">
-			<fieldset>
-				<legend>
-					Horizontal Container
-				</legend>
-				<div class="control-group">
-					<label class="control-label" for="inputEmail">Email</label>
-					<div class="controls">
-						<apex:inputText id="inputEmail"></apex:inputText>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="inputPassword">Password</label>
-					<div class="controls">
-						<input type="password" id="inputPassword" placeholder="Password" />
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="controls">
-						<label class="checkbox">
-							<input type="checkbox" />
-							Remember me </label>
-						<button type="submit" class="btn">
-							Sign in
-						</button>
-					</div>
-				</div>
-			</fieldset>
+            <fieldset>
+                <legend>
+                    Horizontal Container
+                </legend>
+                <div class="control-group">
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                        <apex:inputText id="inputEmail"></apex:inputText>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword">Password</label>
+                    <div class="controls">
+                        <input type="password" id="inputPassword" placeholder="Password" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="checkbox">
+                            <input type="checkbox" />
+                            Remember me </label>
+                        <button type="submit" class="btn">
+                            Sign in
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
 </apex:form>
 
-<apex:includeScript value="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></apex:includeScript>
-<apex:includeScript value="{!URLFOR($Resource.sfdc_bootstrap, 'bootstrap/js/bootstrap.min.js')}"></apex:includeScript>
+<c:BootstrapComponent ></c:BootstrapComponent>
 
 <script>
-var $j = jQuery.noConflict();
-$j(document).ready(function(){
-	var objname=document.getElementById("{!$Component.form2.inputEmail}");
-	$j(objname).attr('placeholder', 'Email'); 
+$j_bootstrap(document).ready(function(){
+    var objname=document.getElementById("{!$Component.form2.inputEmail}");
+    $j_bootstrap(objname).attr('placeholder', 'Email'); 
 });
 </script>
 </apex:page>
