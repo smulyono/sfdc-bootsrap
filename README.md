@@ -4,7 +4,7 @@ Forked from Bootstrap v2.2.2 (http://twitter.github.com/bootstrap)
 
 ## Goal
 
-Ability to use bootstrap in friendly manner under SFDC environment. 
+Ability to use bootstrap in friendly manner under SFDC environment.
 
 ## Modification
 
@@ -20,6 +20,7 @@ All bootstrap tags / styles can be used under nested id/class 'bootstrap-panel'.
 * Upload sfdc-bootstrap.zip file to static resources
 * Example of usage under /pages/testBootstrap.page
   or see live demo : https://smulyono-developer-edition.na9.force.com/testBootstrap
+* Use the unmanaged package (here) [https://login.salesforce.com/packaging/installPackage.apexp?p0=04tE0000000UoKI]. Get more information about this package (here) [https://github.com/smulyono/sfdc-customui]
 
 ## How to Generate / Build
 

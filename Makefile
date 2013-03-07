@@ -82,7 +82,7 @@ bootstrap:
 	rm bootstrap/js/copyright.js bootstrap/js/bootstrap.min.tmp.js
 
 zip-bootstrap: clean bootstrap
-	zip sfdc-bootstrap.zip bootstrap
+	zip -r sfdc-bootstrap.zip bootstrap
 
 #
 # MAKE FOR GH-PAGES 4 FAT & MDO ONLY (O_O  )
