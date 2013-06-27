@@ -1,10 +1,13 @@
-# [SFDC-Bootstrap v1.0]
+# [SFDC-Bootstrap v2.0]
 
-Forked from Bootstrap v2.2.2 (http://twitter.github.com/bootstrap)
+Forked from Bootstrap v2.3.2 (http://twitter.github.com/bootstrap)
 
-## Goal
+To get started, checkout http://getbootstrap.com!
 
-Ability to use bootstrap in friendly manner under SFDC environment.
+## What is this ?
+
+Ability to use bootstrap in friendly manner under SFDC environment or other layout / theme. The idea is
+to have bootstrap play nicely with other css that is already in the page.
 
 ## Modification
 
@@ -25,4 +28,7 @@ All bootstrap tags / styles can be used under nested id/class 'bootstrap-panel'.
 ## How to Generate / Build
 
 * Follow the instructions to [compile Bootstrap less] (file http://twitter.github.com/bootstrap/extend.html#compiling)
-* Run `make zip-bootstrap` to generate the sfdc-bootstrap.zip files
+    * $> npm install
+    * Run `make zip-bootstrap` to generate the sfdc-bootstrap.zip files
+
+
